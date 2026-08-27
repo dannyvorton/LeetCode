@@ -30,7 +30,27 @@
  */
 
 public class LC0001_TwoSum {
-  public static void main(String[] args) {
-    System.out.println("Hello LeetCode");
+
+  public static void example1() {
+    int[] num = {2, 7, 11, 15};
+    int target = 9;
+      
   }
+
+  public static void example2() {
+    int[] num = {3, 2, 4};
+    int target = 6;
+  }
+
+  public static void example3() {
+    int[] num = {3, 3};
+    int target = 6;
+  }
+
+  public static void main(String[] args) {
+    example1();
+    example2();
+    example3();
+  }
+
 }
