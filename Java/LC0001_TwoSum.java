@@ -34,7 +34,9 @@ public class LC0001_TwoSum {
   public static void example1() {
     int[] num = {2, 7, 11, 15};
     int target = 9;
-      
+    for (int i = 0; i < num.length; i++) {
+      System.out.println("Index " + i + ": " +num[i]);
+    }
   }
 
   public static void example2() {
