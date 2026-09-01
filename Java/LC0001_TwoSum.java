@@ -31,12 +31,17 @@
 
 public class LC0001_TwoSum {
 
-  public static void example1() {
+  public static int[] example1() {
     int[] num = {2, 7, 11, 15};
     int target = 9;
     for (int i = 0; i < num.length; i++) {
-      System.out.println("Index " + i + ": " +num[i]);
+      for (int j = i + 1; j < num.length; j++) {
+        if (num[i] + num[j] == target) {
+          return new int[] {i, j};
+        }
+      }
     }
+    return new int[] {};
   }
 
   public static void example2() {
