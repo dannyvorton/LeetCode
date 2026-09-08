@@ -32,26 +32,21 @@
 public class LC0001_TwoSum {
 
   public static int[] example1() {
-    int[] num = {2, 7, 11, 15};
-    int target = 9;
-    for (int i = 0; i < num.length; i++) {
-      for (int j = i + 1; j < num.length; j++) {
-        if (num[i] + num[j] == target) {
-          return new int[] {i, j};
-        }
-      }
-    }
-    return new int[] {};
+    int[] num1 = {2, 7, 11, 15};
+    int[] target1 = {0, 1};
+    return num1;
   }
 
   public static void example2() {
-    int[] num = {3, 2, 4};
-    int target = 6;
+    int[] num2 = {3, 2, 4};
+    int[] target2 = {1, 2};
+    return num2;
   }
 
   public static void example3() {
-    int[] num = {3, 3};
-    int target = 6;
+    int[] num3 = {3, 3};
+    int[] target3 = {0, 1};
+    return num3;
   }
 
   public static void main(String[] args) {
