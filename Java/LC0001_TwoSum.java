@@ -29,30 +29,32 @@
  Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
  */
 
+import java.util.Arrays;
+
 public class LC0001_TwoSum {
 
   public static int[] example1() {
     int[] num1 = {2, 7, 11, 15};
-    int[] target1 = {0, 1};
+    int target1 = 9;
     return num1;
   }
 
-  public static void example2() {
+  public static int[] example2() {
     int[] num2 = {3, 2, 4};
-    int[] target2 = {1, 2};
+    int target2 = 6;
     return num2;
   }
 
-  public static void example3() {
+  public static int[] example3() {
     int[] num3 = {3, 3};
-    int[] target3 = {0, 1};
+    int target3 = 6;
     return num3;
   }
 
   public static void main(String[] args) {
-    example1();
-    example2();
-    example3();
+    System.out.println(Arrays.toString(example1()));
+    System.out.println(Arrays.toString(example2()));
+    System.out.println(Arrays.toString(example3()));
   }
 
 }
