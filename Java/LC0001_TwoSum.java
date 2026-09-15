@@ -30,12 +30,15 @@
  */
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LC0001_TwoSum {
 
   public static int[] example1() {
     int[] num1 = {2, 7, 11, 15};
     int target1 = 9;
+    Map<Integer, Integer> newExp1 = new HashMap<>();
     return num1;
   }
 
