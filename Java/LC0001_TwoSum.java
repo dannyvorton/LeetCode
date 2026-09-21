@@ -30,8 +30,8 @@
  */
 
 import java.util.Arrays;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC0001_TwoSum {
 
@@ -39,9 +39,9 @@ public class LC0001_TwoSum {
     int[] num1 = {2, 7, 11, 15};
     int target1 = 9;
     Map<Integer, Integer> newEg1 = new HashMap<>();
-    for (int i = 0; i < num1.length; i++) {
-      
-    }
+    newEg1.forEach((key, value) -> {
+      System.out.println(key + " : " + value);
+    });
     return num1;
   }
 
