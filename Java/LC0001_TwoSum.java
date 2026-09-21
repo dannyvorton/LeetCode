@@ -39,9 +39,9 @@ public class LC0001_TwoSum {
     int[] num1 = {2, 7, 11, 15};
     int target1 = 9;
     Map<Integer, Integer> newEg1 = new HashMap<>();
-    newEg1.forEach((key, value) -> {
-      System.out.println(key + " : " + value);
-    });
+    for (int key: newEg1.keySet()) {
+      return key;
+    }
     return num1;
   }
 
