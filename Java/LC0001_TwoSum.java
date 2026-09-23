@@ -40,7 +40,7 @@ public class LC0001_TwoSum {
     int target1 = 9;
     Map<Integer, Integer> newEg1 = new HashMap<>();
     for (int key: newEg1.keySet()) {
-      return key;
+//      return key;
     }
     return num1;
   }
