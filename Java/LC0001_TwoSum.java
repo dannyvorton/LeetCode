@@ -38,9 +38,12 @@ public class LC0001_TwoSum {
   public static int[] example1() {
     int[] num1 = {2, 7, 11, 15};
     int target1 = 9;
-    Map<Integer, Integer> newEg1 = new HashMap<>();
-    for (int key: newEg1.keySet()) {
-//      return key;
+    for (int i = 0; i < num1.length; i++) {
+      for (int j = 1; j < num1.length; j++) {
+        if (i + j == target1) {
+          return ;
+        }
+      }
     }
     return num1;
   }
