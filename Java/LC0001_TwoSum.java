@@ -37,11 +37,11 @@ public class LC0001_TwoSum {
 
   public static int[] example1() {
     int[] num1 = {2, 7, 11, 15};
-    int target1 = 9;
+    int target1 = 9; // [0, 1]
     for (int i = 0; i < num1.length; i++) {
       for (int j = 1; j < num1.length; j++) {
         if (i + j == target1) {
-          return ;
+          return new int[] {num1[i], num1[j]};
         }
       }
     }
