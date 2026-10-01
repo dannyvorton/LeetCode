@@ -50,7 +50,14 @@ public class LC0001_TwoSum {
 
   public static int[] example2() {
     int[] num2 = {3, 2, 4};
-    int target2 = 6;
+    int target2 = 6; // [1,2]
+    for (int i = 0; i < num2.length; i++) {
+      for (int j = 0; j < num2.length; j++) {
+        if (num2[i] + num2[j] == target2) {
+          return new int[] {i, j};
+        }
+      }
+    }
     return num2;
   }
 
