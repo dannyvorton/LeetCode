@@ -40,7 +40,7 @@ public class LC0001_TwoSum {
     int target1 = 9; // [0, 1]
     for (int i = 0; i < num1.length; i++) {
       for (int j = 0; j < num1.length; j++) {
-        if (num1[i] + num1[j] == target1) {
+        if (num1[i] != num1[j] && num1[i] + num1[j] == target1) {
           return new int[] {i, j};
         }
       }
@@ -53,7 +53,7 @@ public class LC0001_TwoSum {
     int target2 = 6; // [1,2]
     for (int i = 0; i < num2.length; i++) {
       for (int j = 0; j < num2.length; j++) {
-        if (num2[i] + num2[j] == target2) {
+        if (num2[i] != num2[j] && num2[i] + num2[j] == target2) {
           return new int[] {i, j};
         }
       }
