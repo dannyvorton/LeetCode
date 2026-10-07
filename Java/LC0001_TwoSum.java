@@ -66,7 +66,7 @@ public class LC0001_TwoSum {
     int target3 = 6; // [0,1]
     for (int i = 0; i < num3.length; i++) {
       for (int j = 0; j < num3.length; j++) {
-        if (num3[i] + num3[j] == target3) {
+        if (num3[i] != num3[j] && num3[i] + num3[j] == target3) {
           return new int[] {i, j};
         }
       }
