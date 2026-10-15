@@ -37,4 +37,22 @@ def example_1():
             if i != j and nums_1[i] + nums_1[j] == target_1:
                 return [i, j]
 
+def example_2():
+    nums_2 = [3, 2, 4]
+    target_2 = 6 # [1, 2]
+    for i in range(len(nums_2)):
+        for j in range(len(nums_2)):
+            if i != j and nums_2[i] + nums_2[j] == target_2:
+                return [i, j]
+
+def example_3():
+    nums_3 = [3, 3]
+    target_3 = 6 # [0, 1]
+    for i in range(len(nums_3)):
+        for j in range(len(nums_3)):
+            if i != j and nums_3[i] + nums_3[j] == target_3:
+                return [i, j]
+
 print(example_1())
+print(example_2())
+print(example_3())
