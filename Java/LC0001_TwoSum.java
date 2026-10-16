@@ -64,15 +64,6 @@ public class LC0001_TwoSum {
   public static int[] example3() {
     int[] num3 = {3, 3};
     int target3 = 6; // [0,1]
-/*
-    for (int i = 0; i < num3.length; i++) {
-      for (int j = 0; j < num3.length; j++) {
-        if (i != j && num3[i] + num3[j] == target3) {
-          return new int[] {i, j};
-        }
-      }
-    }
-*/
     Map<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < num3.length; i++) {
       int result3 = target3 - num3[i];
