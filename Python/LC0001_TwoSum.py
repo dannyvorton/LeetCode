@@ -58,12 +58,3 @@ print(example_2())
 print(example_3())
 
 # optimal solution
-'''
-def example_3_optimal(nums, target):
-    seen = {}  # Stores {value: index}
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in seen:
-            return [seen[complement], i]
-        seen[num] = i
-'''
