@@ -34,6 +34,23 @@ It is guaranteed that the list represents a number that does not have leading ze
 '''
 
 def example_1():
-    return 'Hello AddTwoNumbers'
+    l1 = [2, 4, 3]
+    l2 = [5, 6, 4]
+    output = [7, 0, 8]
+    return 'Hello Example 1'
+
+def example_2():
+    l1 = [0]
+    l2 = [0]
+    output = [0]
+    return 'Hello Example 2'
+
+def example_3():
+    l1 = [9, 9, 9, 9, 9, 9, 9]
+    l2 = [9, 9, 9, 9]
+    output = [8, 9, 9, 9, 0, 0, 0, 1]
+    return 'Hello Example 3'
 
 print(example_1())
+print(example_2())
+print(example_3())
