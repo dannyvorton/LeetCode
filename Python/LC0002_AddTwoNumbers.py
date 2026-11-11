@@ -39,7 +39,7 @@ def example_1():
     l1 = [2, 4, 3]
     l2 = [5, 6, 4]
     output = [7, 0, 8]
-    return output
+    return l1[0] + l2[0]
 
 def example_2():
     l1 = [0]
