@@ -36,32 +36,31 @@ import java.util.Arrays;
 
 public class LC0002_AddTwoNumbers {
 
-  public static int[] example1() {
-    int[] l1 = {2, 4, 3};
-    int[] l2 = {5, 6, 4};
-    int[] output = {7, 0, 8};
-    int[] result = new int[l1[0] + l2[0]];
-    return result;
-  }
+    public static int[] example1() {
+        int[] l1 = { 2, 4, 3 };
+        int[] l2 = { 5, 6, 4 };
+        int[] output = { 7, 0, 8 };
+        int[] result = { l1[0] + l2[0], l1[1] + l2[1] };
+        return result;
+    }
 
-  public static int[] example2() {
-    int[] l1 = {0};
-    int[] l2 = {0};
-    int[] output = {0};
-    return output;
-  }
+    public static int[] example2() {
+        int[] l1 = { 0 };
+        int[] l2 = { 0 };
+        int[] output = { 0 };
+        return output;
+    }
 
-  public static int[] example3() {
-    int[] l1 = {9, 9, 9, 9, 9, 9, 9};
-    int[] l2 = {9, 9, 9, 9};
-    int[] output = {8, 9, 9, 9, 0, 0, 0, 1};
-    return output;
-  }
+    public static int[] example3() {
+        int[] l1 = { 9, 9, 9, 9, 9, 9, 9 };
+        int[] l2 = { 9, 9, 9, 9 };
+        int[] output = { 8, 9, 9, 9, 0, 0, 0, 1 };
+        return output;
+    }
 
-  public static void main(String[] args) {
-    System.out.println(Arrays.toString(example1()));
-    System.out.println(Arrays.toString(example2()));
-    System.out.println(Arrays.toString(example3()));
-  }
-
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(example1()));
+        System.out.println(Arrays.toString(example2()));
+        System.out.println(Arrays.toString(example3()));
+    }
 }
