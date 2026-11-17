@@ -40,7 +40,7 @@ public class LC0002_AddTwoNumbers {
         int[] l1 = { 2, 4, 3 };
         int[] l2 = { 5, 6, 4 };
         int[] output = { 7, 0, 8 };
-        int[] result = { l1[0] + l2[0], l1[1] + l2[1] };
+        int[] result = { l1[0] + l2[0], l1[1] + l2[1], l1[2] + l2[2] };
         return result;
     }
 
