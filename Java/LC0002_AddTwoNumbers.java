@@ -48,14 +48,16 @@ public class LC0002_AddTwoNumbers {
         int[] l1 = { 0 };
         int[] l2 = { 0 };
         int[] output = { 0 };
-        return output;
+        int[] result = { l1[0] + l2[0] };
+        return result;
     }
 
     public static int[] example3() {
         int[] l1 = { 9, 9, 9, 9, 9, 9, 9 };
         int[] l2 = { 9, 9, 9, 9 };
         int[] output = { 8, 9, 9, 9, 0, 0, 0, 1 };
-        return output;
+        int[] result = { l1[0] + l2[0], l1[1] + l2[1], l1[2] + l2[2], l1[3] + l2[3], l1[4], l1[5], l1[6], 1 };
+        return result;
     }
 
     public static void main(String[] args) {

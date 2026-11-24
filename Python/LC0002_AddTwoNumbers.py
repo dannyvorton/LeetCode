@@ -36,19 +36,22 @@ def example_1():
     l1 = [2, 4, 3]
     l2 = [5, 6, 4]
     output = [7, 0, 8]
-    return l1[0] + l2[0], l1[1] + l2[1], l1[2] + l2[2]
+    result = l1[0] + l2[0], l1[1] + l2[1], l1[2] + l2[2]
+    return result
 
 def example_2():
     l1 = [0]
     l2 = [0]
     output = [0]
-    return output
+    result = l1[0] + l2[0]
+    return result
 
 def example_3():
     l1 = [9, 9, 9, 9, 9, 9, 9]
     l2 = [9, 9, 9, 9]
     output = [8, 9, 9, 9, 0, 0, 0, 1]
-    return output
+    result = l1[0] + l2[0], l1[1] + l2[1], l1[2] + l2[2], l1[3] + l2[3], l1[4], l1[5], l1[6], 1
+    return result
 
 print(example_1())
 print(example_2())
