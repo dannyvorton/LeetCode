@@ -33,6 +33,8 @@ It is guaranteed that the list represents a number that does not have leading ze
 */
 
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LC0002_AddTwoNumbers {
 
@@ -40,8 +42,22 @@ public class LC0002_AddTwoNumbers {
         int[] l1 = { 2, 4, 3 };
         int[] l2 = { 5, 6, 4 };
         int[] output = { 7, 0, 8 };
-        int[] result = { l1[0] + l2[0], l1[1] + l2[1], l1[2] + l2[2] };
-        return result;
+
+        List<Integer> result = new ArrayList<>();
+        int i = 0;
+        int j = 0;
+        int c = 0;
+
+        while (i < a.length || j < b.length || c > 0) {
+            int sum = c;
+            if (i < l1.length) sum += l1[i++];
+            if (j < l2.length) sum += l2[j++];
+
+            result.add(sum % 10);
+            c = sum / 10;
+        }
+
+        return result.stream().mapToInt(Integer::intValue).toArray();
     }
 
     public static int[] example2() {
